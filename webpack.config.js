@@ -16,7 +16,15 @@ export default {
                 test: /\.html$/,
                 use: 'html-loader',
             },
+            {
+                test: /\.css$/, // Matches all .css files
+                use: [
+                  'style-loader', // Injects CSS into the DOM
+                  'css-loader',   // Translates CSS into CommonJS modules
+                ],
+              },
         ],
+        
     },
     // Other configurations...
 };

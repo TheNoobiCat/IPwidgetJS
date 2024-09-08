@@ -1,5 +1,6 @@
 import html from "./static/widget.html";
 import axios from "axios";
+import "./static/style.css"
 
 async function main() {
     const response = await axios.get("http://ip-api.com/json");
