@@ -1,0 +1,39 @@
+{
+  "name": "ipwidgetjs",
+  "version": "1.0.0",
+  "description": "Display IP information in a beautiful widget",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "start": "npx webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNoobiCat/IPwidgetJS.git"
+  },
+  "keywords": [
+    "ip",
+    "widget",
+    "js",
+    "react",
+    "html",
+    "css",
+    "node"
+  ],
+  "author": "TheNoobiCat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheNoobiCat/IPwidgetJS/issues"
+  },
+  "homepage": "https://github.com/TheNoobiCat/IPwidgetJS#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "type": "module",
+  "devDependencies": {
+    "html-loader": "^5.1.0",
+    "html-minifier-terser": "^7.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
