@@ -3,35 +3,32 @@
 import React from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
-import "./style.css"
+import "./static/style.css"
 
 export function IPwidgetJS(props){
     const [isp, setIsp] = React.useState("");
     const [ip, setIp] = React.useState("");
     const [country, setCountry] = React.useState("");
     const [city, setCity] = React.useState("");
-    const [lat, setLat] = React.useState("");
-    const [long, setLong] = React.useState("");
+    const [loc, setLoc] = React.useState("");
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://ip-api.com/json");
+                const response = await axios.get("https://ipinfo.io/json");
                 const result = response.data;
                 
-                const ip = result.query;
-                const isp = result.isp;
-                const country = result.countryCode;
+                const ip = result.ip;
+                const isp = result.org;
+                const country = result.country;
                 const city = result.city;
-                const lat = result.lat;
-                const long = result.lon;
+                const loc = result.loc
 
                 setIp(ip);
                 setIsp(isp);
                 setCountry(country);
                 setCity(city);
-                setLat(lat);
-                setLong(long);
+                setLoc(loc)
             } catch (error) {
                 console.error("Error fetching IP data:", error);
             }
@@ -53,7 +50,7 @@ export function IPwidgetJS(props){
                 <div className="ipwidgetjs-info-container">
                     <h2 style={{display: props.showIsp !== undefined ? props.showIsp ? "block" : "none" : "block"}} className="ipwidgetjs-info-isp"><b>ISP:</b> {isp}</h2>
                     <h2 style={{display: props.showCity !== undefined ? props.showCity ? "block" : "none" : "block"}} className="ipwidgetjs-info-descr ipwidgetjs-info-descr-city"><b>{city}</b></h2>
-                    <h2 style={{display: props.showLatLong !== undefined ? props.showLatLong ? "block" : "none" : "block"}} className="ipwidgetjs-info-descr ipwidgetjs-info-descr-final"><b>Lat</b> {lat} <b>Long</b> {long}</h2>
+                    <h2 style={{display: props.showLatLong !== undefined ? props.showLatLong ? "block" : "none" : "block"}} className="ipwidgetjs-info-descr ipwidgetjs-info-descr-final"><b>Lat, Long:</b> {loc}</h2>
                 </div>
             </div>
         </div>
