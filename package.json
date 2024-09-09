@@ -1,6 +1,6 @@
 {
   "name": "ipwidgetjs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Display IP information in a beautiful widget",
   "main": "./dist/bundle.js",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "exports": {
     ".": "./dist/bundle.js",
-    "./react": "./dist/react/react.js"
+    "./react": "./dist/react.js"
   },
   "scripts": {
     "start": "npx webpack --mode production"
