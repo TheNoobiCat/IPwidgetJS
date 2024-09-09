@@ -4,14 +4,14 @@
   "description": "Display IP information in a beautiful widget",
   "main": "./dist/bundle.js",
   "files": [
-    "dist/",
+    "dist/"
   ],
-  "exports":{
+  "exports": {
     ".": "./dist/bundle.js",
     "./react": "./dist/react/react.js"
-  }
+  },
   "scripts": {
-    "start": "npx webpack --mode production",
+    "start": "npx webpack --mode production"
   },
   "repository": {
     "type": "git",
