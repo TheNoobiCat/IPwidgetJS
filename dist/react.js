@@ -3,7 +3,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
-import "../src/static/style.css"
+import "./style.css"
 
 export function IPwidgetJS(props){
     const [isp, setIsp] = React.useState("");
