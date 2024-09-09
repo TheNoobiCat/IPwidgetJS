@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/TheNoobiCat/IPwidgetJS#readme",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "react": "^18.3.1"
   },
   "type": "module",
   "devDependencies": {
