@@ -1,6 +1,6 @@
 {
   "name": "ipwidgetjs",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Display IP information in a beautiful widget",
   "main": "./dist/bundle.js",
   "files": [
