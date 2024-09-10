@@ -4,6 +4,9 @@
 ![NPM Downloads](https://img.shields.io/npm/dw/ipwidgetjs)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hw/TheNoobiCat/IPwidgetJS)
 
+## What it looks like
+![image](https://github.com/user-attachments/assets/5241ce82-5397-410d-ad24-e005745f7dfc)
+
 ## Installation
 Import using JSDelivr CDN
 ```
